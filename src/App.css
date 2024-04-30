@@ -1,0 +1,45 @@
+@font-face {
+  font-family: PPNeueMachina_Light;
+  src: url("./assets/fonts/PPNeueMachina_ Light.woff");
+}
+@font-face {
+  font-family: PPNeueMachina_Medium;
+  src: url("./assets/fonts/PP Neue Machina Inktrap Medium.woff");
+}
+@font-face {
+  font-family: Satoshi_Variable;
+  src: url("./assets/fonts/Satoshi-Variable.ttf");
+}
+* {
+  font-family: Satoshi_Variable, Arial, Helvetica, sans-serif;
+}
+.light {
+  font-family: PPNeueMachina_Light, Arial, Helvetica, sans-serif;
+}
+.medium {
+  font-family: PPNeueMachina_Medium, Arial, Helvetica, sans-serif;
+}
+.main[theme="black"] {
+  background-color: black;
+}
+.main[theme="black"] .section {
+  color: #fff;
+}
+.main[theme="cyan"] {
+  background-color: rgb(80, 202, 202);
+}
+.main[theme="cyan"] {
+  color: rgb(19, 26, 26);
+}
+.main[theme="salmon"] {
+  background-color: salmon;
+}
+.main[theme="salmon"] .section{
+  color: rgb(43, 28, 26);
+}
+.main[theme="white"] {
+  background-color: #fff;
+}
+.main[theme="white"] .section{
+  color: #111;
+}
