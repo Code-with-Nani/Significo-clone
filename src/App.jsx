@@ -29,7 +29,7 @@ function App() {
                 <h2 className="medium text-7xl">intuitive</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d348317a_Ellipse 845-10.png"
+                    src="/profilesImg/659dbdfd5a080be8d348317a_Ellipse 845-10.png"
                     alt=""
                   />
                 </div>
@@ -38,7 +38,7 @@ function App() {
                 <h2 className="medium text-7xl">useful</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d348317e_Ellipse 845-7.png"
+                    src="/profilesImg/659dbdfd5a080be8d348317e_Ellipse 845-7.png"
                     alt=""
                   />
                 </div>
@@ -47,7 +47,7 @@ function App() {
                 <h2 className="medium text-7xl">empathetic</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483180_Ellipse 845-4.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483180_Ellipse 845-4.png"
                     alt=""
                   />
                 </div>
@@ -56,7 +56,7 @@ function App() {
                 <h2 className="medium text-7xl">intuitive</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483181_Ellipse 845-5.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483181_Ellipse 845-5.png"
                     alt=""
                   />
                 </div>
@@ -65,7 +65,7 @@ function App() {
                 <h2 className="medium text-7xl">useful</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483182_Ellipse 845-8.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483182_Ellipse 845-8.png"
                     alt=""
                   />
                 </div>
@@ -74,7 +74,7 @@ function App() {
                 <h2 className="medium text-7xl">empathetic</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483183_Ellipse 845-6.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483183_Ellipse 845-6.png"
                     alt=""
                   />
                 </div>
@@ -85,7 +85,7 @@ function App() {
                 <h2 className="medium text-7xl">useful</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483188_Ellipse 845-2.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483188_Ellipse 845-2.png"
                     alt=""
                   />
                 </div>
@@ -94,7 +94,7 @@ function App() {
                 <h2 className="medium text-7xl">intuitive</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483184_Ellipse 845.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483184_Ellipse 845.png"
                     alt=""
                   />
                 </div>
@@ -103,7 +103,7 @@ function App() {
                 <h2 className="medium text-7xl">empathetic</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483189_Ellipse 845-1.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483189_Ellipse 845-1.png"
                     alt=""
                   />
                 </div>
@@ -112,7 +112,7 @@ function App() {
                 <h2 className="medium text-7xl">intuitive</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483195_Ellipse 845.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483195_Ellipse 845.png"
                     alt=""
                   />
                 </div>
@@ -121,7 +121,7 @@ function App() {
                 <h2 className="medium text-7xl">useful</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483183_Ellipse"
+                    src="/profilesImg/659dbdfd5a080be8d3483183_Ellipse"
                     alt=""
                   />
                 </div>
@@ -130,7 +130,7 @@ function App() {
                 <h2 className="medium text-7xl">empathetic</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483188_Ellipse"
+                    src="/profilesImg/659dbdfd5a080be8d3483188_Ellipse"
                     alt=""
                   />
                 </div>
@@ -141,7 +141,7 @@ function App() {
                 <h2 className="medium text-7xl">intuitive</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d348317a_Ellipse 845-10.png"
+                    src="/profilesImg/659dbdfd5a080be8d348317a_Ellipse 845-10.png"
                     alt=""
                   />
                 </div>
@@ -150,7 +150,7 @@ function App() {
                 <h2 className="medium text-7xl">useful</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d348317e_Ellipse 845-7.png"
+                    src="/profilesImg/659dbdfd5a080be8d348317e_Ellipse 845-7.png"
                     alt=""
                   />
                 </div>
@@ -159,7 +159,7 @@ function App() {
                 <h2 className="medium text-7xl">empathetic</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483180_Ellipse 845-4.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483180_Ellipse 845-4.png"
                     alt=""
                   />
                 </div>
@@ -168,7 +168,7 @@ function App() {
                 <h2 className="medium text-7xl">intuitive</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483181_Ellipse 845-5.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483181_Ellipse 845-5.png"
                     alt=""
                   />
                 </div>
@@ -177,7 +177,7 @@ function App() {
                 <h2 className="medium text-7xl">useful</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483182_Ellipse 845-8.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483182_Ellipse 845-8.png"
                     alt=""
                   />
                 </div>
@@ -186,7 +186,7 @@ function App() {
                 <h2 className="medium text-7xl">empathetic</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483183_Ellipse 845-6.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483183_Ellipse 845-6.png"
                     alt=""
                   />
                 </div>
@@ -197,7 +197,7 @@ function App() {
                 <h2 className="medium text-7xl">intuitive</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483184_Ellipse 845.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483184_Ellipse 845.png"
                     alt=""
                   />
                 </div>
@@ -206,7 +206,7 @@ function App() {
                 <h2 className="medium text-7xl">useful</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483188_Ellipse 845-2.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483188_Ellipse 845-2.png"
                     alt=""
                   />
                 </div>
@@ -215,7 +215,7 @@ function App() {
                 <h2 className="medium text-7xl">empathetic</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483189_Ellipse 845-1.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483189_Ellipse 845-1.png"
                     alt=""
                   />
                 </div>
@@ -224,7 +224,7 @@ function App() {
                 <h2 className="medium text-7xl">intuitive</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483195_Ellipse 845.png"
+                    src="/profilesImg/659dbdfd5a080be8d3483195_Ellipse 845.png"
                     alt=""
                   />
                 </div>
@@ -233,7 +233,7 @@ function App() {
                 <h2 className="medium text-7xl">useful</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483183_Ellipse"
+                    src="/profilesImg/659dbdfd5a080be8d3483183_Ellipse"
                     alt=""
                   />
                 </div>
@@ -242,7 +242,7 @@ function App() {
                 <h2 className="medium text-7xl">empathetic</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
                   <img
-                    src="/public/profilesImg/659dbdfd5a080be8d3483188_Ellipse"
+                    src="/profilesImg/659dbdfd5a080be8d3483188_Ellipse"
                     alt=""
                   />
                 </div>
