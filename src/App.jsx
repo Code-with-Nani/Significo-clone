@@ -1,9 +1,11 @@
 import "./App.css";
 import video from "./assets/images/significo-main-hero.mp4";
+import card from "./assets/images/card.svg";
 
 function App() {
   return (
-    <div theme="black" className="main w-full">
+    <div theme="cyan" className="main w-full">
+      {/* home */}
       <div className="Home section w-full h-screen relative">
         <div className="btmtext absolute z-20 bottom-10 left-10 w-44">
           <h1 className="font-semibold">
@@ -247,6 +249,80 @@ function App() {
                   />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* about */}
+      <div className="About section w-full flex items-start gap-10 py-52 px-11 relative">
+        <div className="ltext w-[45%] sticky top-20">
+          <p className="text-lg font-semibold">
+            Significo is a custom health software developer founded on the
+            belief <br /> that technology can transform healthcare to put people
+            first. We put humanity back at the center of healthcare by
+            simplifying complexity, accelerating capacity, and improving
+            outcomes.
+          </p>
+          <h2 className="text-7xl light pt-10">
+            We Craft Human-Centric Health Software
+          </h2>
+          <div className="btn pt-8">
+            <button className="border-[1px] border-[--dcyan] px-4 py-3 font-semibold">
+              OUR SOLUTIONS
+            </button>
+          </div>
+        </div>
+        <div className="cards w-[55%] space-y-10  pt-[38rem]">
+          <div className="card bg-[--black] text-[--cyan] w-[80%] border-[1px] border-[--dcyan] px-6 flex justify-between items-center">
+            <div className="cardLeft">
+              <h2 className="text-xl font-semibold">Driven by Purpose</h2>
+              <p className="font-medium pt-2">
+                We believe technology can dramatically improve the experience of
+                managing health, and when crafted with empathy, intention, and
+                expertise, impact lives at scale.
+              </p>
+            </div>
+            <div className="cardRight">
+              <img className="h-48 select-none" src={card} alt="" />
+            </div>
+          </div>
+          <div className="card  w-[80%] border-[1px] border-[--dcyan] px-6 flex justify-between items-center">
+            <div className="cardLeft">
+              <h2 className="text-xl font-semibold">Driven by Purpose</h2>
+              <p className="font-medium pt-2">
+                We believe technology can dramatically improve the experience of
+                managing health, and when crafted with empathy, intention, and
+                expertise, impact lives at scale.
+              </p>
+            </div>
+            <div className="cardRight">
+              <img className="h-48 select-none" src={card} alt="" />
+            </div>
+          </div>
+          <div className="card w-[80%] border-[1px] border-[--dcyan] px-6 flex justify-between items-center">
+            <div className="cardLeft">
+              <h2 className="text-xl font-semibold">Driven by Purpose</h2>
+              <p className="font-medium pt-2">
+                We believe technology can dramatically improve the experience of
+                managing health, and when crafted with empathy, intention, and
+                expertise, impact lives at scale.
+              </p>
+            </div>
+            <div className="cardRight">
+              <img className="h-48 select-none" src={card} alt="" />
+            </div>
+          </div>
+          <div className="card w-[80%] border-[1px] border-[--dcyan] px-6 flex justify-between items-center">
+            <div className="cardLeft">
+              <h2 className="text-xl font-semibold">Driven by Purpose</h2>
+              <p className="font-medium pt-2">
+                We believe technology can dramatically improve the experience of
+                managing health, and when crafted with empathy, intention, and
+                expertise, impact lives at scale.
+              </p>
+            </div>
+            <div className="cardRight">
+              <img className="h-48 select-none" src={card} alt="" />
             </div>
           </div>
         </div>
