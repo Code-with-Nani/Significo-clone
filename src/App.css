@@ -34,12 +34,15 @@
 .main[theme="salmon"] {
   background-color: salmon;
 }
-.main[theme="salmon"] .section{
+.main[theme="salmon"] .section {
   color: rgb(43, 28, 26);
 }
 .main[theme="white"] {
   background-color: #fff;
 }
-.main[theme="white"] .section{
+.main[theme="white"] .section {
   color: #111;
+}
+*::selection {
+  background-color: rgb(247, 103, 88);
 }
