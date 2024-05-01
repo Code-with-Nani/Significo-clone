@@ -2,47 +2,63 @@
   font-family: PPNeueMachina_Light;
   src: url("./assets/fonts/PPNeueMachina_ Light.woff");
 }
+
 @font-face {
   font-family: PPNeueMachina_Medium;
   src: url("./assets/fonts/PP Neue Machina Inktrap Medium.woff");
 }
+
 @font-face {
   font-family: Satoshi_Variable;
   src: url("./assets/fonts/Satoshi-Variable.ttf");
 }
+
 * {
   font-family: Satoshi_Variable, Arial, Helvetica, sans-serif;
 }
+
 .light {
   font-family: PPNeueMachina_Light, Arial, Helvetica, sans-serif;
 }
+
 .medium {
   font-family: PPNeueMachina_Medium, Arial, Helvetica, sans-serif;
 }
+
+*::selection {
+  background-color: #f76758;
+}
+
+:root {
+  --black: #000000;
+  --white: #fff;
+  --cyan: #aedee0;
+  --salmon: #ef9d71;
+  --dcyan: #131a1a;
+  --dsalmon: #2b1c1a;
+}
+
 .main[theme="black"] {
-  background-color: black;
+  background-color: var(--black);
 }
 .main[theme="black"] .section {
-  color: #fff;
+  color: var(--white);
 }
 .main[theme="cyan"] {
-  background-color: rgb(80, 202, 202);
+  background-color: var(--cyan);
 }
 .main[theme="cyan"] {
-  color: rgb(19, 26, 26);
+  color: var(--dcyan);
 }
 .main[theme="salmon"] {
-  background-color: salmon;
+  background-color: var(--salmon);
 }
 .main[theme="salmon"] .section {
-  color: rgb(43, 28, 26);
+  color: var(--dsalmon);
 }
 .main[theme="white"] {
-  background-color: #fff;
+  background-color: var(--white);
 }
 .main[theme="white"] .section {
-  color: #111;
-}
-*::selection {
-  background-color: rgb(247, 103, 88);
+  color: var(--black);
 }
