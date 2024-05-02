@@ -1,10 +1,15 @@
 import "./App.css";
 import video from "./assets/images/significo-main-hero.mp4";
 import card from "./assets/images/card.svg";
+import slide1 from "./assets/images/slidesimg1.jpg";
+import slide2 from "./assets/images/slidesimg2.jpg";
+import slide3 from "./assets/images/slidesimg5.jpg";
+import slide4 from "./assets/images/slidesimg4.jpg";
+import slide5 from "./assets/images/flash.png";
 
 function App() {
   return (
-    <div theme="cyan" className="main w-full">
+    <div theme="salmon" className="main w-full">
       {/* home */}
       <div className="Home section w-full h-screen relative">
         <div className="btmtext absolute z-20 bottom-10 left-10 w-44">
@@ -327,6 +332,84 @@ function App() {
           </div>
         </div>
       </div>
+      {/* real */}
+      <div className="real section w-full ">
+        {/*container*/}
+        <div className="cont h-[400vh] relative">
+          {/*slides*/}
+          <div className="slides w-full h-screen flex sticky top-0 left-0">
+            {/*slide--1*/}
+            <div className="slide w-full h-screen flex-shrink-0 flex justify-center items-center relative ">
+              <div className="text">
+                <h2 className="light text-8xl">Real Talk,</h2>
+                <h2 className="light text-8xl">Real Impact</h2>
+              </div>
+              <div className="img w-72 h-72 rounded-full overflow-hidden absolute right-0 translate-x-[60%] z-10">
+                <img
+                  src={slide1}
+                  alt=""
+                  className="w-full h-full object-cover "
+                />
+              </div>
+            </div>
+            {/*slide--2*/}
+            <div className="slide w-full h-screen flex-shrink-0 bg-[--salmon] flex justify-center items-center relative">
+              <div className="text w-[70%] text-center">
+                <h2 className="medium text-9xl text-[--white]">20.4M</h2>
+                <h2 className="medium text-5xl">
+                  Real people — real lives — we have built products and
+                  solutions for.
+                </h2>
+                <p className="absolute top-[25%] left-[15%] w-60 font-semibold text-lg text-left">
+                  W're on a mission to impact as many lives as possible and
+                  build a better company while we do it. Here's our progress.
+                </p>
+              </div>
+              <div className="img absolute w-40 h-40 rounded-full overflow-hidden bg-red-600 bottom-[15%] left-[25%]">
+                <img
+                  src={slide2}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="img absolute w-80 h-80 rounded-full overflow-hidden bg-red-600 bottom-0 left-[50%] translate-y-[35%]">
+                <img
+                  src={slide4}
+                  alt=""
+                  className="w-full h-full object-cover scale-125"
+                />
+              </div>
+              <div className="img w-72 h-72 rounded-full overflow-hidden absolute right-0 translate-x-[30%] z-10">
+                <img
+                  src={slide3}
+                  alt=""
+                  className="w-full h-full object-cover "
+                />
+              </div>
+            </div>
+            {/*slide--3*/}
+            <div className="slide w-full h-screen flex-shrink-0 bg-[--salmon] flex justify-center items-center relative ">
+              <div className="text w-[70%] text-center">
+                <h2 className="medium text-9xl text-[--white]">49%</h2>
+                <h2 className="medium text-5xl">Expert Women in Tech.</h2>
+                <p className="absolute top-[25%] left-[15%] w-60 font-semibold text-lg text-left">
+                  Our team is global and diverse, because our individual
+                  experiences make us stronger
+                </p>
+              </div>
+
+              <div className="img absolute w-40 h-40 rounded-full overflow-hidden top-10 left-[50%] -translate-x-1/2">
+                <img
+                  src={slide5}
+                  alt=""
+                  className="w-full h-full object-cover scale-125"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
   );
 }
