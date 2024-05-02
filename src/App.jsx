@@ -5,6 +5,7 @@ import slide1 from "./assets/images/slidesimg1.jpg";
 import slide2 from "./assets/images/slidesimg2.jpg";
 import slide3 from "./assets/images/slidesimg5.jpg";
 import slide4 from "./assets/images/slidesimg4.jpg";
+import paraImg from "./assets/images/slidesimg4.jpg";
 import slide5 from "./assets/images/flash.png";
 
 function App() {
@@ -410,7 +411,7 @@ function App() {
         </div>
       </div>
       {/* team */}
-      <div className="team section w-full min-h-screen p-12 ">
+      <div className="team section w-full p-12 ">
         <h2 className="light text-6xl text-center">Our Team</h2>
         {/* list */}
         <div className="list w-full mt-16">
@@ -516,6 +517,32 @@ function App() {
             {/* img */}
             <div className="hidden img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
           </div>
+        </div>
+      </div>
+      {/*paragraph*/}
+      <div className="para section w-full h-screen flex flex-col gap-10 justify-center items-center">
+        <div className="text w-[80%] text-center">
+          <p className="text-xl font-medium">
+            Working with the Significo team has been such a pleasure! We took on
+            a significant project to rebuild our entire platform and the team
+            approached the project with our best interests in mind. They
+            continue to prioritize the end user experience and offer amazing
+            expertise in all of the areas we lack internally. I would personally
+            be lost without this team, their ability to problem solve, their
+            openness to feedback and desire to build the product like it is
+            their own.
+          </p>
+        </div>
+        <div className="personal flex flex-col justify-center items-center">
+          <div className="img w-20 h-20 rounded-full overflow-hidden">
+            <img
+              src={paraImg}
+              alt=""
+              className="w-full h-full object-cover scale-150"
+            />
+          </div>
+          <h2 className="text-3xl medium mt-10">Miranda Ernst</h2>
+          <h3 className="light">Product Manager @ Hello.Nani.xyz</h3>
         </div>
       </div>
     </div>
