@@ -337,7 +337,7 @@ function App() {
         {/*container*/}
         <div className="cont h-[400vh] relative">
           {/*slides*/}
-          <div className="slides w-full h-screen flex sticky top-0 left-0">
+          <div className="slides w-full h-screen flex sticky top-0 left-0 overflow-hidden">
             {/*slide--1*/}
             <div className="slide w-full h-screen flex-shrink-0 flex justify-center items-center relative ">
               <div className="text">
@@ -409,7 +409,115 @@ function App() {
           </div>
         </div>
       </div>
-      
+      {/* team */}
+      <div className="team section w-full min-h-screen p-12 ">
+        <h2 className="light text-6xl text-center">Our Team</h2>
+        {/* list */}
+        <div className="list w-full mt-16">
+          {/* listelem */}
+          <div className="listelem w-full p-10 border-b-[1px] border-b-black relative">
+            {/* content */}
+            <div className="content flex justify-between items-center relative z-10">
+              <div className="left flex justify-center items-center gap-10">
+                <h2 className="light text-5xl text-black/25">01</h2>
+                <h2 className="light text-5xl">Dr. Rick McCartney</h2>
+              </div>
+              <div className="right">
+                <h2 className="font-medium text-xl">CEO</h2>
+              </div>
+            </div>
+            {/* blueLayer */}
+            <div className="blueLayer w-full h-0 bg-[#2544EE] absolute bottom-0 left-0"></div>
+            {/* img */}
+            <div className="hidden img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
+          </div>
+          {/* listelem */}
+          <div className="listelem w-full p-10 border-b-[1px] border-b-black relative">
+            {/* content */}
+            <div className="content flex justify-between items-center relative z-10">
+              <div className="left flex justify-center items-center gap-10">
+                <h2 className="light text-5xl text-black/25">01</h2>
+                <h2 className="light text-5xl">Dr. Rick McCartney</h2>
+              </div>
+              <div className="right">
+                <h2 className="font-medium text-xl">CEO</h2>
+              </div>
+            </div>
+            {/* blueLayer */}
+            <div className="blueLayer w-full h-0 bg-[#2544EE] absolute bottom-0 left-0"></div>
+            {/* img */}
+            <div className="hidden img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
+          </div>
+          {/* listelem */}
+          <div className="listelem w-full p-10 border-b-[1px] border-b-black relative">
+            {/* content */}
+            <div className="content flex justify-between items-center relative z-10">
+              <div className="left flex justify-center items-center gap-10">
+                <h2 className="light text-5xl text-black/25">01</h2>
+                <h2 className="light text-5xl">Dr. Rick McCartney</h2>
+              </div>
+              <div className="right">
+                <h2 className="font-medium text-xl">CEO</h2>
+              </div>
+            </div>
+            {/* blueLayer */}
+            <div className="blueLayer w-full h-0 bg-[#2544EE] absolute bottom-0 left-0"></div>
+            {/* img */}
+            <div className="hidden img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
+          </div>
+          {/* listelem */}
+          <div className="listelem w-full p-10 border-b-[1px] border-b-black relative">
+            {/* content */}
+            <div className="content flex justify-between items-center relative z-10">
+              <div className="left flex justify-center items-center gap-10">
+                <h2 className="light text-5xl text-black/25">01</h2>
+                <h2 className="light text-5xl">Dr. Rick McCartney</h2>
+              </div>
+              <div className="right">
+                <h2 className="font-medium text-xl">CEO</h2>
+              </div>
+            </div>
+            {/* blueLayer */}
+            <div className="blueLayer w-full h-0 bg-[#2544EE] absolute bottom-0 left-0"></div>
+            {/* img */}
+            <div className="hidden img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
+          </div>
+          {/* listelem */}
+          <div className="listelem w-full p-10 border-b-[1px] border-b-black relative">
+            {/* content */}
+            <div className="content flex justify-between items-center relative z-10">
+              <div className="left flex justify-center items-center gap-10">
+                <h2 className="light text-5xl text-black/25">01</h2>
+                <h2 className="light text-5xl">Dr. Rick McCartney</h2>
+              </div>
+              <div className="right">
+                <h2 className="font-medium text-xl">CEO</h2>
+              </div>
+            </div>
+            {/* blueLayer */}
+            <div className="blueLayer w-full h-0 bg-[#2544EE] absolute bottom-0 left-0"></div>
+            {/* img */}
+            <div className="hidden img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
+          </div>
+          {/* listelem */}
+          <div className="listelem w-full p-10 border-b-[1px] border-b-black relative">
+            {/* content */}
+            <div className="content flex justify-between items-center relative z-10">
+              <div className="left flex justify-center items-center gap-10">
+                <h2 className="light text-5xl text-black/25">01</h2>
+                <h2 className="light text-5xl">Dr. Rick McCartney</h2>
+              </div>
+              <div className="right">
+                <h2 className="font-medium text-xl">CEO</h2>
+              </div>
+            </div>
+            {/* blueLayer */}
+            <div className="blueLayer w-full h-0 bg-[#2544EE] absolute bottom-0 left-0"></div>
+            {/* img */}
+            <div className="hidden img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
