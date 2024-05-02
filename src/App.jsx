@@ -10,7 +10,7 @@ import slide5 from "./assets/images/flash.png";
 
 function App() {
   return (
-    <div theme="salmon" className="main w-full">
+    <div theme="light" className="main w-full">
       {/* home */}
       <div className="Home section w-full h-screen relative">
         <div className="btmtext absolute z-20 bottom-10 left-10 w-44">
@@ -543,6 +543,50 @@ function App() {
           </div>
           <h2 className="text-3xl medium mt-10">Miranda Ernst</h2>
           <h3 className="light">Product Manager @ Hello.Nani.xyz</h3>
+        </div>
+      </div>
+      {/* capsules */}
+      <div className="capsules section w-full min-h-screen flex px-10 mt-20">
+        <div className="left w-1/4 flex flex-col justify-between items-center">
+          <h2 className="text-lg font-medium">
+            Stay up-to-date on the latest healthcare innovations and thought
+            leadership.
+          </h2>
+          <div className="">
+            <h2 className="light text-7xl">Explore Our Insights</h2>
+          </div>
+        </div>
+        <div className="right w-full flex gap-10 justify-center items-center">
+          <div className="capsule rotate-[-16deg] border-[1px] border-black rounded-full p-10 flex flex-col justify-between items-center translate-y-20">
+            <div className="img w-72 h-72 rounded-full bg-red-800 overflow-hidden">
+              <img src={slide2} alt="" />
+            </div>
+            <div className="text text-center mt-20">
+              <h3 className="medium text-2xl">Equity in Tech: An </h3>
+              <h3 className="medium text-2xl">International </h3>
+              <h3 className="medium text-2xl">Women's Day </h3>
+              <h3 className="medium text-2xl">Conversation with</h3>
+              <h3 className="medium text-2xl">Caroline Nieto,</h3>
+            </div>
+            <div className="btn medium text-lg bg-purple-400/90 rounded-full px-4 py-2 mt-8">
+              Thought Leadership
+            </div>
+          </div>
+          <div className="capsule rotate-[-16deg] border-[1px] border-black rounded-full p-10 flex flex-col justify-between items-center">
+            <div className="img w-72 h-72 rounded-full bg-red-800 overflow-hidden">
+              <img src={slide2} alt="" />
+            </div>
+            <div className="text text-center mt-20">
+              <h3 className="medium text-2xl">Equity in Tech: An </h3>
+              <h3 className="medium text-2xl">International </h3>
+              <h3 className="medium text-2xl">Women's Day </h3>
+              <h3 className="medium text-2xl">Conversation with</h3>
+              <h3 className="medium text-2xl">Caroline Nieto,</h3>
+            </div>
+            <div className="btn medium text-lg bg-purple-400/90 rounded-full px-4 py-2 mt-8">
+              Thought Leadership
+            </div>
+          </div>
         </div>
       </div>
     </div>
