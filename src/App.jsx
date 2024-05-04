@@ -7,22 +7,148 @@ import slide3 from "./assets/images/slidesimg5.jpg";
 import slide4 from "./assets/images/slidesimg4.jpg";
 import paraImg from "./assets/images/slidesimg4.jpg";
 import slide5 from "./assets/images/flash.png";
+import { useGSAP } from "@gsap/react";
+import gsap, { Power2 } from "gsap";
+import { useEffect, useRef, useState } from "react";
+import { ScrollTrigger } from "gsap/all";
+import { Power4 } from "gsap";
+import LocomotiveScroll from "locomotive-scroll";
 
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 function App() {
+  const locomotiveScroll = new LocomotiveScroll();
+  const videoref = useRef();
+  const boxref = useRef();
+  const spanref = useRef();
+
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".Home",
+        start: "top ",
+        end: "bottom top",
+        scrub: 0.5,
+        pin: true,
+      },
+    });
+    tl.from(
+      videoref.current,
+      {
+        "--clip": "100%",
+        ease: Power2,
+        duration: 3,
+      },
+      "sameFlag"
+    );
+    tl.from(
+      boxref.current,
+      {
+        scale: 3,
+        ease: Power2,
+        duration: 4,
+      },
+      "sameFlag"
+    );
+    tl.from(
+      ".left",
+      {
+        xPercent: "-10",
+        ease: Power4,
+        stagger: 0.1,
+      },
+      "a"
+    );
+    tl.from(
+      ".right",
+      {
+        xPercent: "1",
+        ease: Power4,
+        stagger: 0.1,
+      },
+      "a"
+    );
+
+    gsap.to(".slide", {
+      scrollTrigger: {
+        trigger: ".real",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 0.5,
+      },
+      xPercent: -200,
+      ease: Power4,
+      duration: 3,
+    });
+  }, []);
+
+  useEffect(() => {
+    gsap.to(spanref.current.children, {
+      opacity: 1,
+      stagger: 0.7,
+      ease: Power4.easeInOut,
+      scrollTrigger: {
+        trigger: ".para",
+        start: "top top",
+        end: "bottom top",
+        scrub: 0.1,
+      },
+    });
+  }, []);
+
+  useGSAP(() => {
+    gsap.to(".capsule2", {
+      y: 0,
+      ease: Power4,
+      scrollTrigger: {
+        trigger: ".capsules",
+        start: "top 70%",
+        end: "bottom bottom",
+        scrub: 1,
+      },
+    });
+  }, []);
+
+  useEffect(() => {
+    document.querySelectorAll(".section").forEach((e) => {
+      ScrollTrigger.create({
+        trigger: e,
+        start: "top 50%",
+        end: "bottom 50%",
+        onEnter: () => {
+          document
+            .querySelector(".main")
+            .setAttribute("theme", e.dataset.color);
+        },
+        onEnterBack: () => {
+          document
+            .querySelector(".main")
+            .setAttribute("theme", e.dataset.color);
+        },
+      });
+    });
+  }, []);
+
   return (
     <div theme="light" className="main w-full">
       {/* home */}
-      <div className="Home section w-full h-screen relative">
+      <div data-color="black" className="Home section w-full h-screen relative">
         <div className="btmtext absolute z-20 bottom-10 left-10 w-44">
           <h1 className="font-semibold">
             We build big ideas. Software. Apps. Tools. For real people. Real
             lives.
           </h1>
         </div>
-        <div className="hidden videoDiv w-full h-screen absolute z-10 top-0 left-0 bg-black overflow-hidden">
+        <div
+          ref={videoref}
+          style={{ "--clip": "0%" }}
+          className="videoDiv w-full h-screen absolute z-10 top-0 left-0 bg-black overflow-hidden"
+        >
           <video
             className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             src={video}
+            autoPlay
+            loop
+            muted
           ></video>
         </div>
         <div className="marqueeContainer w-full h-screen relative overflow-hidden">
@@ -31,8 +157,11 @@ function App() {
               Crafting a new paradigm of healthcare, one that is
             </h2>
           </div>
-          <div className="box scale-[1] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%]">
-            <div className="row w-full flex items-center gap-10 -translate-x-2/4 whitespace-nowrap">
+          <div
+            ref={boxref}
+            className="box scale-[1] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%]"
+          >
+            <div className="row right w-full flex items-center gap-10 -translate-x-[60%] whitespace-nowrap">
               <div className="elem flex items-center gap-10">
                 <h2 className="medium text-7xl">intuitive</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
@@ -88,7 +217,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="row w-full flex items-center gap-10 -translate-x-1/4 whitespace-nowrap">
+            <div className="row left w-full flex items-center gap-10 -translate-x-[45%] whitespace-nowrap">
               <div className="elem flex items-center gap-10">
                 <h2 className="medium text-7xl">useful</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
@@ -144,7 +273,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="row w-full flex items-center gap-10 -translate-x-3/4 whitespace-nowrap">
+            <div className="row right w-full flex items-center gap-10 -translate-x-[55%] whitespace-nowrap">
               <div className="elem flex items-center gap-10">
                 <h2 className="medium text-7xl">intuitive</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
@@ -200,7 +329,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="row w-full flex items-center gap-10 -translate-x-1/2 whitespace-nowrap">
+            <div className="row left w-full flex items-center gap-10 -translate-x-[47%] whitespace-nowrap">
               <div className="elem flex items-center gap-10">
                 <h2 className="medium text-7xl">intuitive</h2>
                 <div className="imgDiv w-12 h-12 bg-red-600 rounded-full">
@@ -260,7 +389,10 @@ function App() {
         </div>
       </div>
       {/* about */}
-      <div className="About section w-full flex items-start gap-10 py-52 px-11 relative">
+      <div
+        data-color="cyan"
+        className="About section w-full flex items-start gap-10 py-52 px-11 relative"
+      >
         <div className="ltext w-[45%] sticky top-20">
           <p className="text-lg font-semibold">
             Significo is a custom health software developer founded on the
@@ -334,9 +466,9 @@ function App() {
         </div>
       </div>
       {/* real */}
-      <div className="real section w-full ">
+      <div data-color="salmon" className="real section w-full ">
         {/*container*/}
-        <div className="cont h-[400vh] relative">
+        <div className="cont h-[300vh] relative">
           {/*slides*/}
           <div className="slides w-full h-screen flex sticky top-0 left-0 overflow-hidden">
             {/*slide--1*/}
@@ -345,7 +477,7 @@ function App() {
                 <h2 className="light text-8xl">Real Talk,</h2>
                 <h2 className="light text-8xl">Real Impact</h2>
               </div>
-              <div className="img w-72 h-72 rounded-full overflow-hidden absolute right-0 translate-x-[60%] z-10">
+              <div className="img w-72 h-72 rounded-full overflow-hidden absolute right-0 z-20">
                 <img
                   src={slide1}
                   alt=""
@@ -380,7 +512,7 @@ function App() {
                   className="w-full h-full object-cover scale-125"
                 />
               </div>
-              <div className="img w-72 h-72 rounded-full overflow-hidden absolute right-0 translate-x-[30%] z-10">
+              <div className="img w-72 h-72 rounded-full overflow-hidden absolute right-0 z-10">
                 <img
                   src={slide3}
                   alt=""
@@ -411,7 +543,7 @@ function App() {
         </div>
       </div>
       {/* team */}
-      <div className="team section w-full p-12 ">
+      <div data-color="white" className="team section w-full p-12 ">
         <h2 className="light text-6xl text-center">Our Team</h2>
         {/* list */}
         <div className="list w-full mt-16">
@@ -430,7 +562,7 @@ function App() {
             {/* blueLayer */}
             <div className="blueLayer w-full h-0 bg-[#2544EE] absolute bottom-0 left-0"></div>
             {/* img */}
-            <div className="hidden img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
+            <div className="opacity-0 img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
           </div>
           {/* listelem */}
           <div className="listelem w-full p-10 border-b-[1px] border-b-black relative">
@@ -447,7 +579,7 @@ function App() {
             {/* blueLayer */}
             <div className="blueLayer w-full h-0 bg-[#2544EE] absolute bottom-0 left-0"></div>
             {/* img */}
-            <div className="hidden img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
+            <div className="opacity-0 img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
           </div>
           {/* listelem */}
           <div className="listelem w-full p-10 border-b-[1px] border-b-black relative">
@@ -464,7 +596,7 @@ function App() {
             {/* blueLayer */}
             <div className="blueLayer w-full h-0 bg-[#2544EE] absolute bottom-0 left-0"></div>
             {/* img */}
-            <div className="hidden img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
+            <div className="opacity-0 img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
           </div>
           {/* listelem */}
           <div className="listelem w-full p-10 border-b-[1px] border-b-black relative">
@@ -481,7 +613,7 @@ function App() {
             {/* blueLayer */}
             <div className="blueLayer w-full h-0 bg-[#2544EE] absolute bottom-0 left-0"></div>
             {/* img */}
-            <div className="hidden img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
+            <div className="opacity-0 img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
           </div>
           {/* listelem */}
           <div className="listelem w-full p-10 border-b-[1px] border-b-black relative">
@@ -498,7 +630,7 @@ function App() {
             {/* blueLayer */}
             <div className="blueLayer w-full h-0 bg-[#2544EE] absolute bottom-0 left-0"></div>
             {/* img */}
-            <div className="hidden img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
+            <div className="opacity-0 img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
           </div>
           {/* listelem */}
           <div className="listelem w-full p-10 border-b-[1px] border-b-black relative">
@@ -515,23 +647,24 @@ function App() {
             {/* blueLayer */}
             <div className="blueLayer w-full h-0 bg-[#2544EE] absolute bottom-0 left-0"></div>
             {/* img */}
-            <div className="hidden img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
+            <div className="opacity-0 img w-[15rem] h-[15rem] bg-red-600 rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"></div>
           </div>
         </div>
       </div>
       {/*paragraph*/}
-      <div className="para section w-full h-screen flex flex-col gap-10 justify-center items-center">
-        <div className="text w-[80%] text-center">
-          <p className="text-xl font-medium">
-            Working with the Significo team has been such a pleasure! We took on
-            a significant project to rebuild our entire platform and the team
-            approached the project with our best interests in mind. They
-            continue to prioritize the end user experience and offer amazing
-            expertise in all of the areas we lack internally. I would personally
-            be lost without this team, their ability to problem solve, their
-            openness to feedback and desire to build the product like it is
-            their own.
-          </p>
+      <div
+        id="para"
+        className="para section w-full h-screen flex flex-col gap-10 justify-center items-center"
+      >
+        <div ref={spanref} className="text w-[80%] text-center">
+          {" Working with the Significo team has been such a pleasure! We took on a significant project to rebuild our entire platform and the team approached the project with our best interests in mind. They continue to prioritize the end user experience and offer amazing expertise in all of the areas we lack internally. I would personally be lost without this team, their ability to problem solve, their openness to feedback and desire to build the product like it is their own."
+            .split(" ")
+            .map((word, index, array) => (
+              <span key={index} className="text-xl font-medium opacity-[0.1]">
+                {word}
+                {index !== array.length - 1 && " "}
+              </span>
+            ))}
         </div>
         <div className="personal flex flex-col justify-center items-center">
           <div className="img w-20 h-20 rounded-full overflow-hidden">
@@ -546,7 +679,10 @@ function App() {
         </div>
       </div>
       {/* capsules */}
-      <div className="capsules section w-full min-h-screen flex px-10 mt-20">
+      <div
+        data-color="white"
+        className="capsules section w-full min-h-screen flex px-10 mt-20"
+      >
         <div className="left w-1/4 flex flex-col justify-between items-center">
           <h2 className="text-lg font-medium">
             Stay up-to-date on the latest healthcare innovations and thought
@@ -572,7 +708,7 @@ function App() {
               Thought Leadership
             </div>
           </div>
-          <div className="capsule rotate-[-16deg] border-[1px] border-black rounded-full p-10 flex flex-col justify-between items-center">
+          <div className="capsule2 rotate-[-16deg] translate-y-20 border-[1px] border-black rounded-full p-10 flex flex-col justify-between items-center">
             <div className="img w-72 h-72 rounded-full bg-red-800 overflow-hidden">
               <img src={slide2} alt="" />
             </div>
