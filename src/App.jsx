@@ -8,7 +8,7 @@ import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
-    <div theme="salmon" className="main w-full">
+    <div theme="light" className="main w-full">
       <Home />
       <About />
       <Slides />
