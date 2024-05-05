@@ -23,7 +23,7 @@ const Team = () => {
               <h2 className="font-medium text-xl lg:text-xl">CEO</h2>
             </div>
             <div className="blueLayer absolute w-full h-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-[#2544EE]"></div>
-            <div className="img absolute w-40 h-40 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden opacity-0">
+            <div className="img absolute w-20 h-20 lg:w-40 lg:h-40 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden opacity-0">
               <img
                 src={items.img}
                 alt=""

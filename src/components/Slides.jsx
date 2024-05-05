@@ -18,9 +18,8 @@ const Slides = () => {
           </h2>
         </div>
         <div className="img lg:w-72 lg:h-72 w-48 h-48 bg-zinc-900 rounded-full overflow-hidden absolute right-0 translate-x-1/2">
-          <img src={img1} alt="" className="" />
+          <img src={img1} alt="" className="select-none" />
         </div>
-        select-none
       </div>
       <div className="slide2 w-full h-screen flex-shrink-0 bg-[--salmon] flex justify-center items-center relative z-[9]">
         <div className="text text-center lg:w-[70%] w-[85%]">
