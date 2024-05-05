@@ -31,7 +31,7 @@ const Capsules = () => {
             </div>
             <div className="text text-center mt-20">
               {items.h2.map((e) => (
-                <h2 className="medium text-2xl">{e}</h2>
+                <h2 className="medium text-xl lg:text-2xl">{e}</h2>
               ))}
             </div>
             <div className="btn medium text-lg bg-[#E9BBFF] rounded-full px-4 py-2 mt-8 cursor-pointer mb-6">
