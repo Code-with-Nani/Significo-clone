@@ -1,12 +1,36 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { listelem } from "../assets/data/teamData";
 import { motion } from "framer-motion";
+import gsap, { Power4 } from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Team = () => {
   const [hover, setHover] = useState(null);
 
+  useEffect(() => {
+    const handleFnc = (dets) => {
+      const X = gsap.utils.mapRange(
+        0,
+        window.innerWidth,
+        -100,
+        100,
+        dets.clientX
+      );
+
+      gsap.to("#img", {
+        x: X,
+      });
+    };
+
+    document.addEventListener("mousemove", handleFnc);
+
+    return () => {
+      document.removeEventListener("mousemove", handleFnc);
+    };
+  }, []);
+
   return (
-    <div className="w-full min-h-screen bg-red-70 lg:px-12 px-6 lg:py-10 py-8">
+    <div className="w-full min-h-screen bg-red-70 lg:px-12 px-6 lg:py-10 py-8 select-none ">
       <h1 className="light text-5xl lg:text-7xl text-center">Our Team</h1>
       <div className="list mt-8 lg:mt-16">
         {listelem.map((items, index) => (
@@ -29,10 +53,12 @@ const Team = () => {
             </div>
             <motion.div
               animate={hover === index ? { height: "100%" } : ""}
+              transition={{ duration: 0.3 }}
               className="blueLayer absolute w-full h-0 -translate-x-1/2 left-1/2 top-0 bg-[#2544EE] "
             ></motion.div>
             <motion.div
-              animate={hover === index ? { opacity: 1 } : "" }
+              id="img"
+              animate={hover === index ? { opacity: 1 } : ""}
               className="img absolute w-20 h-20 lg:w-40 lg:h-40 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden opacity-0 z-10"
             >
               <img
