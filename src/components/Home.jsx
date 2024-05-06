@@ -6,6 +6,7 @@ import gsap, { Power2, Power4 } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 const Home = () => {
   useGSAP(() => {
     const tl = gsap.timeline({

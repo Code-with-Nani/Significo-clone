@@ -8,17 +8,29 @@ import img6 from "../assets/images/Lightning.png";
 import img7 from "../assets/images/Rocket.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { Power4, ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Slides = () => {
   useGSAP(() => {
-    gsap.to(".slides", {
-      xPercent: -100,
+    gsap.to(".slide", {
+      xPercent: -200,
+      duration: 3,
+      ease: Power4,
+      scrollTrigger: {
+        trigger: ".slides",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+        pin: true,
+      },
     });
   }, []);
 
   return (
     <div className="slides section w-full h-screen flex overflow-hidden">
-      <div className="slide1 w-full h-screen flex-shrink-0 flex flex-col justify-center items-center relative z-10">
+      <div className="slide1 slide w-full h-screen flex-shrink-0 flex flex-col justify-center items-center relative z-10">
         <div className="text ">
           <h2 className="light text-5xl lg:text-8xl">
             Real Talk,
@@ -29,7 +41,7 @@ const Slides = () => {
           <img src={img1} alt="" className="select-none" />
         </div>
       </div>
-      <div className="slide2 w-full h-screen flex-shrink-0 bg-[--salmon] flex justify-center items-center relative z-[9]">
+      <div className="slide2 slide w-full h-screen flex-shrink-0 bg-[--salmon] flex justify-center items-center relative z-[9]">
         <div className="text text-center lg:w-[70%] w-[85%]">
           <h2 className="medium text-6xl lg:text-9xl text-white">20.4M</h2>
           <h2 className="medium text-2xl lg:text-5xl">
@@ -65,7 +77,7 @@ const Slides = () => {
           />
         </div>
       </div>
-      <div className="slide3 w-full h-screen flex-shrink-0 bg-[--salmon] flex justify-center items-center relative">
+      <div className="slide3 slide w-full h-screen flex-shrink-0 bg-[--salmon] flex justify-center items-center relative">
         <div className="text text-center lg:w-[70%] w-[85%]">
           <h2 className="medium text-6xl lg:text-9xl text-white">49%</h2>
           <h2 className="medium text-2xl lg:text-5xl">Expert Women in Tech.</h2>
