@@ -13,10 +13,11 @@ function App() {
   const locomotive = new LocomotiveScroll({
     el: mainRef.current,
     smooth: true,
+
   });
 
   return (
-    <div ref={mainRef} theme="light" className="main w-full">
+    <div ref={mainRef} theme="salmon" className="main w-full">
       <Home />
       <About />
       <Slides />

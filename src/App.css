@@ -62,3 +62,6 @@
 .main[theme="white"] .section {
   color: var(--black);
 }
+.videoDiv{
+  clip-path: circle(var(--clip) at 50% 50%);
+}

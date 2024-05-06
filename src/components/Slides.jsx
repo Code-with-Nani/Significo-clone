@@ -6,8 +6,16 @@ import img4 from "../assets/images/slidesImg4.jpg";
 import img5 from "../assets/images/slidesImg3.jpg";
 import img6 from "../assets/images/Lightning.png";
 import img7 from "../assets/images/Rocket.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Slides = () => {
+  useGSAP(() => {
+    gsap.to(".slides", {
+      xPercent: -100,
+    });
+  }, []);
+
   return (
     <div className="slides section w-full h-screen flex overflow-hidden">
       <div className="slide1 w-full h-screen flex-shrink-0 flex flex-col justify-center items-center relative z-10">

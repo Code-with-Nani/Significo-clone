@@ -1,5 +1,4 @@
 import React from "react";
-import svg from "../assets/images/diamond.svg";
 import { card } from "../assets/data/cardsData";
 
 const About = () => {
@@ -22,7 +21,12 @@ const About = () => {
       </div>
       <div className="rightCard lg:w-[55%] flex flex-col gap-10 lg:pt-[40rem] overflow-x-auto">
         {card.map((items, index) => (
-          <div key={index} className={`card lg:w-[75%] flex justify-between items-center px-4 lg:px-10 py-6 border-[1px] border-[--dcyan] ${index === 0 && "bg-[--black] text-[--cyan]"}`}>
+          <div
+            key={index}
+            className={`card lg:w-[75%] flex justify-between items-center px-4 lg:px-10 py-6 border-[1px] border-[--dcyan] ${
+              index === 0 && "bg-[--black] text-[--cyan]"
+            }`}
+          >
             <div className="cardLeft lg:w-[65%]">
               <h2 className="text-lg font-semibold">{items.h2}</h2>
               <p className="font-semibold mt-2">{items.p}</p>
