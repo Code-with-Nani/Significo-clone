@@ -13,10 +13,6 @@
   src: url("./assets/fonts/Satoshi-Variable.ttf");
 }
 
-*::selection {
-  background-color: rgb(247, 103, 88);
-}
-
 * {
   font-family: Satoshi_Variable, Arial, Helvetica, sans-serif;
 }
@@ -29,51 +25,43 @@
   font-family: PPNeueMachina_Medium, Arial, Helvetica, sans-serif;
 }
 
+*::selection {
+  background-color: #f76758;
+}
+
 :root {
   --black: #000000;
-  --white: #ffffff;
+  --white: #fff;
   --cyan: #aedee0;
   --salmon: #ef9d71;
   --dcyan: #131a1a;
-  --dsalmon: #1b1211;
+  --dsalmon: #2b1c1a;
 }
 
 .main[theme="black"] {
   background-color: var(--black);
 }
-
 .main[theme="black"] .section {
   color: var(--white);
 }
-
 .main[theme="cyan"] {
   background-color: var(--cyan);
 }
-
 .main[theme="cyan"] {
   color: var(--dcyan);
 }
-
 .main[theme="salmon"] {
   background-color: var(--salmon);
 }
-
 .main[theme="salmon"] .section {
   color: var(--dsalmon);
 }
-
 .main[theme="white"] {
   background-color: var(--white);
 }
-
 .main[theme="white"] .section {
   color: var(--black);
 }
-
-.videoDiv {
+.videoDiv{
   clip-path: circle(var(--clip) at 50% 50%);
-}
-
-.main {
-  transition: background-color ease-out 0.5s;
 }
