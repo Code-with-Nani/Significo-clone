@@ -29,7 +29,7 @@ const Slides = () => {
   }, []);
 
   return (
-    <div className="slides section w-full h-screen flex overflow-hidden">
+    <div data-color = "salmon" className="slides section w-full h-screen flex overflow-hidden">
       <div className="slide1 slide w-full h-screen flex-shrink-0 flex flex-col justify-center items-center relative z-10">
         <div className="text ">
           <h2 className="light text-5xl lg:text-8xl">

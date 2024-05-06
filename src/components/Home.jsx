@@ -59,7 +59,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="Home section w-full h-screen relative">
+    <div data-color = "black" className="Home section w-full h-screen relative">
       <div
         style={{ "--clip": "0%" }}
         className="videoDiv w-full h-full absolute z-[5] overflow-hidden"

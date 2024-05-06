@@ -3,7 +3,10 @@ import { card } from "../assets/data/cardsData";
 
 const About = () => {
   return (
-    <div className="About section w-full flex lg:flex-row flex-col items-start gap-12 py-32 lg:py-52 px-7 lg:px-12 relative">
+    <div
+      data-color="cyan"
+      className="About section w-full flex lg:flex-row flex-col items-start gap-12 py-32 lg:py-52 px-7 lg:px-12 relative"
+    >
       <div className="leftText lg:w-[45%] lg:sticky top-20">
         <p className="text-lg font-semibold">
           Significo is a custom health software developer founded on the belief

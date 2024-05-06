@@ -30,7 +30,10 @@ const Team = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-screen bg-red-70 lg:px-12 px-6 lg:py-10 py-8 select-none ">
+    <div
+      data-color="white"
+      className="section w-full min-h-screen bg-red-70 lg:px-12 px-6 lg:py-10 py-8 select-none "
+    >
       <h1 className="light text-5xl lg:text-7xl text-center">Our Team</h1>
       <div className="list mt-8 lg:mt-16">
         {listelem.map((items, index) => (
